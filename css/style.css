@@ -21,11 +21,41 @@ section.board {
   background-color: #f1faee;
 }
 
-div {
+section.hoverZones {
+  display: grid;
+  grid-template-columns: repeat(7, 10vmin);
+  grid-template-rows: 10vmin;
+  grid-gap: 0vmin;
+  justify-content: center;
+}
+
+.hoverZone {
   border: 2px solid#f1faee;
   border-radius: 50%;
   font-size: 8vmin;
   text-align: center;
   vertical-align: middle;
   background-color: #457b9d;
+
+}
+
+.zones {
+  border: 2px solid#f1faee;
+  border-radius: 50%;
+  font-size: 8vmin;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #457b9d;
+}
+
+#players {
+  display: flex;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
 }
