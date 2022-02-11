@@ -13,7 +13,7 @@ let gameBoard, turn, winner
 const board = document.querySelector('.board')
 const message = document.querySelector('#message')
 const resetBtn = document.querySelector('#reset-button')
-const hoverZones = document.querySelector
+const hoverZones = document.querySelector('.hoverZones')
 const sq0 = document.getElementById('0')
 const sq1 = document.getElementById('1')
 const sq2 = document.getElementById('2')
@@ -73,7 +73,13 @@ resetBtn.addEventListener('click', function(){
   init()
 })
 
-
+hoverZones.addEventListener('mouseover', function(event){
+  if (turn === 1) {
+    event.target.classList.add('red')
+  } if (turn === -1) {
+    event.target.classList.add('yellow')
+  }
+})
 
 
 
