@@ -1,0 +1,31 @@
+body {
+    background-color: #457b9d;
+    color: #a8dadc;
+	/* Use a system font, if none are available use an available sans-sarif   font */
+	margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+section.board {
+  display: grid;
+  grid-template-rows: repeat(6, 10vmin);
+  grid-template-columns: repeat(7, 10vmin);
+  grid-gap: 0vmin;
+  justify-content: center;
+  border:5px solid#f1faee;
+  background-color: #f1faee;
+}
+
+div {
+  border: 2px solid#f1faee;
+  border-radius: 50%;
+  font-size: 8vmin;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #457b9d;
+}
