@@ -81,6 +81,10 @@ hoverZones.addEventListener('mouseover', function(event){
   }
 })
 
+hoverZones.addEventListener('mouseout', function(event){
+  event.target.classList.remove('red', 'yellow')
+})
+
 
 
 /*-------------------------------- Functions --------------------------------*/
@@ -120,3 +124,12 @@ function isWinner() {
 function changeTurn() {
   turn = turn * -1
 }
+
+function hover(event) {
+  if (turn === 1) {
+    event.target.classList.add('red')
+  } if (turn === -1) {
+    event.target.classList.add('yellow')
+  }
+}
+
