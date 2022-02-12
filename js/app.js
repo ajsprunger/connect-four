@@ -178,6 +178,9 @@ init()
 function play(event) {
   let column = columns[parseInt(event.target.id.slice(-1))]
   for (let i = 0; i < column.length; i++) {
+    if (winner !== null){
+      return
+    }
     if (gameBoard[column[i]] === null) {
       gameBoard[column[i]] = turn
       changeTurn()
