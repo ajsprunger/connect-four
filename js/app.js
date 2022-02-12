@@ -183,6 +183,7 @@ function play(event) {
     }
     if (gameBoard[column[i]] === null) {
       gameBoard[column[i]] = turn
+      getWinner()
       changeTurn()
       render()
       return
@@ -233,3 +234,13 @@ function hover(event) {
   }
 }
 
+function getWinner() {
+  for (i = 0; i < winningCombos.length; i++) {
+    if (Math.abs(gameBoard[winningCombos[i][0]] +
+      gameBoard[winningCombos[i][1]] +
+      gameBoard[winningCombos[i][2]] +
+      gameBoard[winningCombos[i][3]]) === 4) {
+      winner = turn
+    }
+  }
+}
