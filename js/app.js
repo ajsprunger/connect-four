@@ -70,14 +70,15 @@ const winningCombos = [
   [12, 19, 26, 33],
   [13, 20, 27, 34],
 ]
-
-const column0 = [35, 28, 21, 14, 7, 0]
-const column1 = [36, 29, 22, 15, 8, 1]
-const column2 = [37, 30, 23, 16, 9, 2]
-const column3 = [38, 31, 24, 17, 10, 3]
-const column4 = [39, 32, 25, 18, 11, 4]
-const column5 = [40, 33, 26, 19, 12, 5]
-const column6 = [41, 34, 27, 20, 13, 6]
+const columns = [
+[35, 28, 21, 14, 7, 0],
+[36, 29, 22, 15, 8, 1],
+[37, 30, 23, 16, 9, 2],
+[38, 31, 24, 17, 10, 3],
+[39, 32, 25, 18, 11, 4],
+[40, 33, 26, 19, 12, 5],
+[41, 34, 27, 20, 13, 6]
+]
 
 /*---------------------------- Variables (state) ----------------------------*/
 
@@ -138,7 +139,7 @@ const sqArray = [
   sq14, sq15, sq16, sq17, sq18, sq19, sq20,
   sq21, sq22, sq23, sq24, sq25, sq26, sq27,
   sq28, sq29, sq30, sq31, sq32, sq33, sq34,
-  sq35, sq36, sq37, sq38, sq39, sq40, sq41,
+  sq35, sq36, sq37, sq38, sq39, sq40, sq41
 ]
 
 
@@ -161,8 +162,8 @@ hoverZones.addEventListener('mouseout', function(event){
   event.target.classList.remove('red', 'yellow')
 })
 
-hoverZones.addEventListener('click', function(event){
-  console.log(parseInt(event.target.id.slice(-1)))
+hoverZones.addEventListener('click', function(event){ 
+  play(event)
 })
 
 // board.addEventListener('click', function(event){
@@ -173,6 +174,18 @@ hoverZones.addEventListener('click', function(event){
 /*-------------------------------- Functions --------------------------------*/
 
 init()
+
+function play(event) {
+  let column = columns[parseInt(event.target.id.slice(-1))]
+  for (let i = 0; i < column.length; i++) {
+    if (gameBoard[column[i]] === null) {
+      gameBoard[column[i]] = turn
+      changeTurn()
+      render()
+      return
+    }
+  }
+}
 
 function init() {
   gameBoard = [null, null, null, null, null, null,  null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,  null, null, null, null, null, null, null, null,  null, null, null, null,]
@@ -193,6 +206,7 @@ function render() {
       sqArray[i].classList.remove('red', 'yellow')
     }
   }
+  isWinner()
   if (gameBoard.some(x => Math.abs(x) === 1)){
     resetBtn.hidden = false
   }
