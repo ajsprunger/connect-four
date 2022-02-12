@@ -59,3 +59,8 @@ section.hoverZones {
 .red {
   background-color: red;
 }
+
+#button-place-holder {
+  height: 50px;
+  width: 84px;
+}
