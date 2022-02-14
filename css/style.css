@@ -40,7 +40,6 @@ section.hoverZones {
 }
 
 .hoverZone {
-  border: 2px solid#f1faee;
   border-radius: 50%;
   font-size: 8vmin;
   text-align: center;
