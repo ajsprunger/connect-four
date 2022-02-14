@@ -60,19 +60,34 @@ section.hover-zones {
   width: 84px;
 }
 
-#page-top {
-  display: flexbox;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;
-}
-
 h1 {
   justify-content: center;
 }
 
-#players {
+#page-top {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+#players {
+  display: grid;
+  grid-template-columns: 73px 73px;
+  grid-template-rows: 50% 50%;
+}
+
+#player2 {
+  grid-area: 2 / 3 / 1 / 2;
+}
+
+#p2-score {
+  grid-area: 2 / 2 / 2 / 3;
+}
+
+#p1-score {
+  grid-area: 2 / 1 / 2 / 2;
+}
+
+#filler {
+  width: 146px;
 }
