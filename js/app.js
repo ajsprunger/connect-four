@@ -83,6 +83,8 @@ const columns = [
 /*---------------------------- Variables (state) ----------------------------*/
 
 let gameBoard, turn, winner
+let p1Score = 0
+let p2Score = 0
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -90,10 +92,10 @@ let gameBoard, turn, winner
 const board = document.querySelector('.board')
 const message = document.querySelector('#message')
 const resetBtn = document.querySelector('#reset-button')
-const hoverZones = document.querySelector('.hoverZones')
+const hoverZones = document.querySelector('.hover-zones')
 const sqArray = document.querySelectorAll('.zones')
-
-
+const p1Wins = document.querySelector('#p1-score')
+const p2Wins = document.querySelector('#p2-score')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -160,6 +162,7 @@ function render() {
     }
   }
   isWinner()
+  scoreCard()
   if (gameBoard.some(x => Math.abs(x) === 1)){
     resetBtn.hidden = false
   }
@@ -190,6 +193,16 @@ function getWinner() {
       gameBoard[winningCombos[i][2]] +
       gameBoard[winningCombos[i][3]]) === 4) {
       winner = turn
+      if (winner = 1) {
+        p1Score += 1
+      } if (winner = -1) {
+        p2Score += 1
+      }
     }
   }
+}
+
+function scoreCard() {
+  p1Wins.textContent = p1Score
+  p2Wins.textContent = p2Score
 }
