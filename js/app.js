@@ -193,9 +193,9 @@ function getWinner() {
       gameBoard[winningCombos[i][2]] +
       gameBoard[winningCombos[i][3]]) === 4) {
       winner = turn
-      if (winner = 1) {
+      if (winner === 1) {
         p1Score += 1
-      } if (winner = -1) {
+      } if (winner === -1) {
         p2Score += 1
       }
     }
