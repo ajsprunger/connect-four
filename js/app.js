@@ -163,6 +163,9 @@ hoverZones.addEventListener('mouseout', function(event){
 })
 
 hoverZones.addEventListener('click', function(event){ 
+  if (event.target.id === 'outsideZone') {
+    return
+  }
   play(event)
 })
 
