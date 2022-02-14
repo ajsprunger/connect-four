@@ -166,11 +166,6 @@ hoverZones.addEventListener('click', function(event){
   play(event)
 })
 
-// board.addEventListener('click', function(event){
-//   console.log(event.target)
-// })
-
-
 /*-------------------------------- Functions --------------------------------*/
 
 init()
