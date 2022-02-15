@@ -96,10 +96,13 @@ const hoverZones = document.querySelector('.hover-zones')
 const sqArray = document.querySelectorAll('.zones')
 const p1Wins = document.querySelector('#p1-score')
 const p2Wins = document.querySelector('#p2-score')
+const resetSound = new Audio('assets/game_connect_4_playing_discs_drop_into_box.mp3')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
 resetBtn.addEventListener('click', function(){
+  resetSound.volume = .5
+  resetSound.play()
   init()
 })
 
