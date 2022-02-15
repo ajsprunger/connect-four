@@ -1,6 +1,7 @@
 body {
   background-image: url('../assets/jungle-background.jpg');
-  background-size: 100%;
+  background-size: 1fr;
+  background-repeat: no-repeat;
   color: #a8dadc;
 	margin: 0;
   height: 100vh;
