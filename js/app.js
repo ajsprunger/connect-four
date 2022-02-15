@@ -97,6 +97,7 @@ const sqArray = document.querySelectorAll('.zones')
 const p1Wins = document.querySelector('#p1-score')
 const p2Wins = document.querySelector('#p2-score')
 const resetSound = new Audio('assets/game_connect_4_playing_discs_drop_into_box.mp3')
+const dropSound = new Audio('assets/dropSound (1).mp3')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -122,6 +123,8 @@ hoverZones.addEventListener('click', function(event){
   if (event.target.id === 'outsideZone') {
     return
   }
+  dropSound.volume = .5
+  dropSound.play()
   play(event)
 })
 
