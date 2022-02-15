@@ -19,6 +19,7 @@ section.board {
   justify-content: center;
   border:5px solid#f1faee;
   background-color: #f1faee;
+  cursor: no-drop;
 }
 
 .zones {
@@ -45,6 +46,7 @@ section.hover-zones {
   text-align: center;
   vertical-align: middle;
   background-color: #457b9d;
+  cursor: pointer;
 }
 
 .yellow {
@@ -76,8 +78,13 @@ h1 {
   grid-template-rows: 50% 50%;
 }
 
+#player1 {
+  color: red;
+}
+
 #player2 {
   grid-area: 2 / 3 / 1 / 2;
+  color: yellow;
 }
 
 #p2-score {
@@ -91,3 +98,4 @@ h1 {
 #filler {
   width: 146px;
 }
+
