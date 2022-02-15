@@ -98,6 +98,10 @@ const p1Wins = document.querySelector('#p1-score')
 const p2Wins = document.querySelector('#p2-score')
 const resetSound = new Audio('assets/game_connect_4_playing_discs_drop_into_box.mp3')
 const dropSound = new Audio('assets/dropSound (1).mp3')
+const body = document.querySelector('body')
+const jungleBtn = document.querySelector('#jungle-button')
+const desertBtn = document.querySelector('#desert-button')
+const mountainBtn = document.querySelector('#mountain-button')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -126,6 +130,18 @@ hoverZones.addEventListener('click', function(event){
   dropSound.volume = .5
   dropSound.play()
   play(event)
+})
+
+jungleBtn.addEventListener('click', function(){
+  body.style.backgroundImage = "url('../assets/jungle-background.jpg')"
+})
+
+desertBtn.addEventListener('click', function(){
+  body.style.backgroundImage = "url('../assets/desert-background.jpg')"
+})
+
+mountainBtn.addEventListener('click', function(){
+  body.style.backgroundImage = "url('../assets/mountain-background.jpg')"
 })
 
 /*-------------------------------- Functions --------------------------------*/
