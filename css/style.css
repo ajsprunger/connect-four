@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', cursive, 'Verdana', 'Georgia', 'Arial';
   background-image: url('../assets/jungle-background.jpg');
   background-size: 1fr;
   background-repeat: no-repeat;
