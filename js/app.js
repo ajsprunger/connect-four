@@ -127,8 +127,6 @@ hoverZones.addEventListener('click', function(event){
   if (event.target.id === 'outsideZone') {
     return
   }
-  dropSound.volume = .5
-  dropSound.play()
   play(event)
 })
 
@@ -155,6 +153,8 @@ function play(event) {
       return
     }
     if (gameBoard[column[i]] === null) {
+      dropSound.volume = .5
+      dropSound.play()    
       gameBoard[column[i]] = turn
       getWinner()
       changeTurn()

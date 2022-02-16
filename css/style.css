@@ -171,26 +171,36 @@ h1 {
 #filler {
   width: 146px;
 }
-/* 
+
 @media screen and (max-width: 768px) {
   .hover-zone {
     border-radius: 0%;
     width: 0;
     height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 50px solid #f1faee;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 45px solid #f1faee;
     font-size: 8vmin;
     text-align: center;
     vertical-align: middle;
-    background-color: #457b9d;
+    background-color: transparent;
     cursor: pointer;
   }
 
   #page-top {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-} */
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  #players{
+    justify-content: center;
+    align-self: center;
+    width: 150px;
+    margin-bottom: 5px;
+  }
+}
