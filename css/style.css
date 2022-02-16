@@ -1,4 +1,24 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference - 
+     in most browser configurations this will be 10px */
+:root {
+  font-size: 62.5%
+}
+
 body {
+  font-family: 'Bebas Neue', cursive;
   background-image: url('../assets/jungle-background.jpg');
   background-size: 1fr;
   background-repeat: no-repeat;
@@ -59,9 +79,48 @@ section.hover-zones {
   background-color: red;
 }
 
+.dropdown {
+  width: 100vw;
+  justify-self: left;
+  align-self: left;
+  display: flex;
+}
+
+.dropdown-toggle {
+  color: #f1faee;
+  background-color: #457b9d;
+  font-size: 2.5rem;
+}
+
+.dropdown-toggle:hover {
+  color: #f1faee;
+  background-color: #457b9d;
+}
+
+.dropdown-toggle:focus {
+  color: #f1faee;
+  background-color: #457b9d;
+}
+
+.dropdown > ul {
+  font-size: 2.0rem;
+  background-color: #457b9d;
+}
+
+.dropdown-item {
+  color: #f1faee;
+}
+
 #button-place-holder {
   height: 50px;
   width: 84px;
+}
+
+#reset-button{
+  font-size: 2.0rem;
+  color: #f1faee;
+  background-color: #457b9d;
+  margin-top: 5px;
 }
 
 h1 {
@@ -69,11 +128,13 @@ h1 {
   align-self: center;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.65);
+  font-size: 5.0rem;
 }
 
 #message {
   background-color: rgba(0, 0, 0, 0.65);
   padding: 5px;
+  font-size: 3.0rem;
 }
 
 #page-top {
@@ -87,6 +148,7 @@ h1 {
   grid-template-columns: 73px 73px;
   grid-template-rows: 50% 50%;
   background-color: rgba(0, 0, 0, 0.65);
+  font-size: 1.7rem;
 }
 
 #player1 {
