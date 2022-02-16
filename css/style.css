@@ -84,6 +84,7 @@ section.hover-zones {
   justify-self: left;
   align-self: left;
   display: flex;
+  margin-bottom: 5px;
 }
 
 .dropdown-toggle {
