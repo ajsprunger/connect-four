@@ -200,7 +200,7 @@ h1 {
   #players{
     justify-content: center;
     align-self: center;
-    width: 150px;
+    width: 8em;
     margin-bottom: 5px;
   }
 }

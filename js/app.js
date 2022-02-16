@@ -193,6 +193,7 @@ function render() {
 function isWinner() {
   return winner === 1 ? message.textContent = "Player 1 wins!"
   : winner === -1 ? message.textContent = "Player 2 wins!"
+  : winner === 'T' ? message.textContent = "Tie game!"
   : message.textContent = `It's ${turn === -1 ? "Player 2" : "Player 1"}'s turn.`
 }
 
@@ -219,7 +220,9 @@ function getWinner() {
         p1Score += 1
       } if (winner === -1) {
         p2Score += 1
-      }
+      } 
+    } if (gameBoard.every(x => Math.abs(x) === 1)){
+      winner = 'T'
     }
   }
 }
