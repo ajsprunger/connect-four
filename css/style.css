@@ -177,9 +177,9 @@ h1 {
     border-radius: 0%;
     width: 0;
     height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 45px solid #f1faee;
+    border-left: .6em solid transparent;
+    border-right: .6em solid transparent;
+    border-top: 1em solid #f1faee;
     font-size: 8vmin;
     text-align: center;
     vertical-align: middle;
