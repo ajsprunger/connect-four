@@ -105,13 +105,13 @@ const mountainBtn = document.querySelector('#mountain-button')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-resetBtn.addEventListener('click', function(){
+resetBtn.addEventListener('click', function() {
   resetSound.volume = .5
   resetSound.play()
   init()
 })
 
-hoverZones.addEventListener('mouseover', function(event){
+hoverZones.addEventListener('mouseover', function(event) {
   if (turn === 1) {
     event.target.classList.add('red')
   } if (turn === -1) {
@@ -119,26 +119,26 @@ hoverZones.addEventListener('mouseover', function(event){
   }
 })
 
-hoverZones.addEventListener('mouseout', function(event){
+hoverZones.addEventListener('mouseout', function(event) {
   event.target.classList.remove('red', 'yellow')
 })
 
-hoverZones.addEventListener('click', function(event){ 
+hoverZones.addEventListener('click', function(event) { 
   if (event.target.id === 'outsideZone') {
     return
   }
   play(event)
 })
 
-jungleBtn.addEventListener('click', function(){
+jungleBtn.addEventListener('click', function() {
   body.style.backgroundImage = "url('../assets/jungle-background.jpg')"
 })
 
-desertBtn.addEventListener('click', function(){
+desertBtn.addEventListener('click', function() {
   body.style.backgroundImage = "url('../assets/desert-background.jpg')"
 })
 
-mountainBtn.addEventListener('click', function(){
+mountainBtn.addEventListener('click', function() {
   body.style.backgroundImage = "url('../assets/mountain-background.jpg')"
 })
 

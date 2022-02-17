@@ -24,10 +24,10 @@ Mobile Display
 <img src="https://i.imgur.com/9OIskr0.png" width="150">
 
 ## Technologies Used
-![Javascript](https://img.shields.io/badge/-Javascript-yellow)
-![HTML](https://img.shields.io/badge/-HTML-red)
-![CSS](https://img.shields.io/badge/-CSS-blue)
-![Bootstrap](https://img.shields.io/badge/-Bootstrap-green)
+![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## Future Features
 <ul>
