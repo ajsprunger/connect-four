@@ -45,3 +45,4 @@ Mobile Display
 <li>Jungle Photo by <a href="https://unsplash.com/@isaacquesada?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Isaac Quesada on Unsplash</a></li>
 <li>Desert photo by <a href="https://unsplash.com/@emma?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Emma Van Sant on Unsplash</a></li>
 <li>Mountain photo by <a href="https://unsplash.com/@ferdinand8a?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Florian Schönbrunner on Unsplash</a></li>
+<li>Github badges by <a href="https://dev.to/envoy_/150-badges-for-github-pnk" target="_blank">Vedant Chainani</a></li>
