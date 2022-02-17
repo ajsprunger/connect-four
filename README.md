@@ -11,7 +11,9 @@ Player 1 begins the game. Drop your tokens into the board by clicking your desir
 
 ## Game Screenshots
 Browser Display
+
 ![BrowserVersion](https://i.imgur.com/2MvLqrg.png)
+
 Mobile Display
 
 <img src="https://i.imgur.com/9OIskr0.png" width="150">
